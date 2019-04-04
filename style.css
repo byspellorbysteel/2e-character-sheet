@@ -1,0 +1,135 @@
+@page {
+	size: A5;
+	border: 1px solid black;
+}
+
+body {
+    font-family: 'Gaegu', sans-serif;
+}
+
+section {
+    height: 148mm;
+    width: 105mm;
+    border: 1px solid black;
+}
+
+section > div {
+    border: 1px solid black;
+    margin: 1mm;
+}
+
+.statblock {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+/* .statblock > div:nth-of-type(1):after { */
+/*     content: ""; */
+/*     display: block; */
+/*     border: 1px solid black; */
+/*     width: 5mm; */
+/*     height: 8mm; */
+/*     margin: 1mm; */
+/* } */
+
+#saves > div:after {
+    display: inline-block;
+    content: " ";
+    border: 1px solid black;
+    width: 5mm;
+}
+
+.header {
+    grid-column-start: span 2;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.header > div:after {
+    content: " ";
+    max-width: 100%;
+    border-bottom: 1px dashed black;
+    display: inline-block;
+}
+
+.header .first-row {
+    flex: 0 0 50%;
+}
+
+.header .second-row {
+    flex: 0 0 33%;
+}
+
+.stat-props {
+    font-size: 0.75em;
+}
+
+.stat-props > div:before {
+    content: " ";
+    width: 5mm;
+    border-bottom: 1px dashed black;
+    display: inline-block;
+}
+
+.main-stats {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto;
+    grid-template-areas:
+	"name name"
+	    "info info"
+	    "str saves"
+	    "dex saves"
+	    "con saves"
+	    "int hp"
+	    "wis ac"
+	    "cha thac0"
+}
+
+#name {
+    grid-area: name;
+}
+
+#info {
+    grid-area: info;
+}
+
+#str {
+    grid-area:str;
+}
+
+#dex {
+    grid-area:dex;
+}
+
+#con {
+    grid-area:con;
+}
+
+#int {
+    grid-area:int;
+}
+
+#wis {
+    grid-area:wis;
+}
+
+#cha {
+    grid-area:cha;
+}
+
+#hp {
+    grid-area:hp;
+}
+
+#ac {
+    grid-area:ac;
+}
+
+#thac0 {
+    grid-area: thac0;
+}
+
+#saves {
+    grid-area: saves;
+}
