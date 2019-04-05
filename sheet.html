@@ -5,76 +5,179 @@
   </head>
   <body>
     <section class="main-stats">
-      <div id="name">Name</div>
-      <div class="header" name="info">
-	<div class="first-row">Race</div>
-	<div class="first-row">Class</div>
-	<div class="second-row">Alignment</div>
-	<div class="second-row">Level</div>
-	<div class="second-row">XP</div>
-      </div>
-      <div class="statblock" id="str">
-	<div>Str</div>
-	<div class="stat-props">
-	  <div>Hit Adj.</div>
-	  <div>Dmg. Adj.</div>
-	  <div>Weight Allow</div>
-	  <div>Open Doors</div>
-	  <div>Bend Bars/Lift Gates</div>
+      <div id="name" class="group">Name</div>
+      <div class="group" name="info">
+	<div class="flex-row">
+	  <div>Race</div><div class="blank"></div>
+	  <div>Class</div><div class="blank"></div>
+	</div>
+	<div class="flex-row">
+	  <div>Alignment</div><div class="blank"></div>
+	  <div>Level</div><div class="blank"></div>
+	  <div>XP</div><div class="blank"></div>
 	</div>
       </div>
-      <div class="statblock" id="dex">
-	<div>Dex</div>
-	<div class="stat-props">
-	  <div>Reaction Adj.</div>
-	  <div>Missile Atk. Adj.</div>
-	  <div>Defensive Adj.</div>
+      <div class="main-content">
+	<div class="col">
+	  <div class="statblock group" id="str">
+	    <div>Str</div>
+	    <div class="stat-props">
+	      <div>Hit Adj.</div>
+	      <div>Dmg. Adj.</div>
+	      <div>Weight Allow</div>
+	      <div>Open Doors</div>
+	      <div>Bend Bars/Lift Gates</div>
+	    </div>
+	  </div>
+	  <div class="statblock group" id="dex">
+	    <div>Dex</div>
+	    <div class="stat-props">
+	      <div>Reaction Adj.</div>
+	      <div>Missile Atk. Adj.</div>
+	      <div>Defensive Adj.</div>
+	    </div>
+	  </div>
+	  <div class="statblock group" id="con">
+	    <div>Con</div>
+	    <div class="stat-props">
+	      <div>HP Adj.</div>
+	      <div>Poison Save Adj.</div>
+	      <div>Regeneration</div>
+	    </div>
+	  </div>
+	  <div class="statblock group" id="int">
+	    <div>Int</div>
+	    <div class="stat-props">
+	      <div>Max. Languages</div>
+	      <div>Max. Spell Level</div>
+	      <div>% Chance to Learn Spell</div>
+	      <div>Max. Spells/Level</div>
+	      <div>Spell Immunities</div>
+	    </div>
+	  </div>
+	  <div class="statblock group" id="wis">
+	    <div>Wis</div>
+	    <div class="stat-props">
+	      <div>Magical Defensive Adj.</div>
+	      <div>Bonus Spells</div>
+	      <div>% Chance of Spell Failure</div>
+	      <div>Spell Immunities</div>
+	    </div>
+	  </div>
+	  <div class="statblock group" id="cha">
+	    <div>Cha</div>
+	    <div class="stat-props">
+	      <div>Max. Henchmen</div>
+	      <div>Loyalty Base</div>
+	      <div>Reaction Adj.</div>
+	    </div>
+	  </div>
 	</div>
-      </div>
-      <div class="statblock" id="con">
-	<div>Con</div>
-	<div class="stat-props">
-	  <div>HP Adj.</div>
-	  <div>Poison Save Adj.</div>
-	  <div>Regeneration</div>
+	<div class="col">
+	  <div class="group-header">&mdash; Saves &mdash;</div>
+	  <div id="saves" class="group">
+	    <div>Paralyzation, Poison, Death Magic</div>
+	    <div>Rod, Staff, Wand</div>
+	    <div>Petrification, Polymorph</div>
+	    <div>Breath Weapon</div>
+	    <div>Spell</div>
+	  </div>
+	  <div class="group-header">&mdash; Hit Points &mdash;</div>
+	  <div id="hp" class="group"></div>
+	  <div class="group-header">&mdash; Armor Class + THAC0 &mdash;</div>
+	  <div class="acthac0">
+	    <div class="group"></div>
+	    <div class="group"></div>
+	  </div>
+	  <div class="group-header">&mdash; Attacks &mdash;</div>
+	  <div class="weapon-block group">
+	    <div class="flex-row weapon-row">
+	      <div class="weapon">Weapon</div><div class="blank"></div>
+	      <div>Type</div><div class="blank small"></div>
+	    </div>
+	    <div class="flex-row weapon-row">
+	      <div class="attack">Attack</div><div class="blank"></div>
+	      <div class="damage">Damage</div><div class="blank big"></div>
+
+	    </div>
+	    <div class="flex-row weapon-row">
+	      <div class="speed">Speed</div><div class="blank small"></div>
+	      <div class="apr">A/R</div><div class="blank"></div>
+	      <div class="range">Range</div><div class="blank"></div>
+	    </div>
+	  </div>
+	  <div class="weapon-block group">
+	    <div class="flex-row weapon-row">
+	      <div class="weapon">Weapon</div><div class="blank"></div>
+	      <div>Type</div><div class="blank small"></div>
+	    </div>
+	    <div class="flex-row weapon-row">
+	      <div class="attack">Attack</div><div class="blank"></div>	      
+	      <div class="damage">Damage</div><div class="blank big"></div>
+	    </div>
+	    <div class="flex-row weapon-row">
+	      <div class="speed">Speed</div><div class="blank small"></div>
+	      <div class="apr">A/R</div><div class="blank"></div>
+	      <div class="range">Range</div><div class="blank"></div>
+	    </div>
+	  </div>
+	  <div class="weapon-block group">
+	    <div class="flex-row weapon-row">
+	      <div class="weapon">Weapon</div><div class="blank"></div>
+	      <div>Type</div><div class="blank small"></div>
+	    </div>
+	    <div class="flex-row weapon-row">
+	      <div class="attack">Attack</div><div class="blank"></div>	      
+	      <div class="damage">Damage</div><div class="blank"></div>
+	    </div>
+	    <div class="flex-row weapon-row">
+	      <div class="speed">Speed</div><div class="blank small"></div>
+	      <div class="apr">A/R</div><div class="blank"></div>
+	      <div class="range">Range</div><div class="blank"></div>
+	    </div>
+	  </div>
+	  <!-- <table class="group attacks"> -->
+	  <!--   <thead> -->
+	  <!--     <tr> -->
+	  <!-- 	<th>Weapon</th> -->
+	  <!-- 	<th>Type</th> -->
+	  <!-- 	<th>Speed</th> -->
+	  <!-- 	<th>A/R</th> -->
+	  <!-- 	<th>Attack</th> -->
+	  <!-- 	<th>Damage</th> -->
+	  <!-- 	<th>Range</th> -->
+	  <!--     </tr> -->
+	  <!--   </thead> -->
+	  <!--   <tr> -->
+	  <!--     <td>&nbsp;</td> -->
+	  <!--     <td>&nbsp;</td> -->
+	  <!--     <td>&nbsp;</td> -->
+	  <!--     <td>&nbsp;</td> -->
+	  <!--     <td>&nbsp;</td> -->
+	  <!--     <td>&nbsp;</td> -->
+	  <!--     <td>&nbsp;</td>	       -->
+	  <!--   </tr> -->
+	  <!--   <tr> -->
+	  <!--     <td>&nbsp;</td> -->
+	  <!--     <td>&nbsp;</td> -->
+	  <!--     <td>&nbsp;</td> -->
+	  <!--     <td>&nbsp;</td> -->
+	  <!--     <td>&nbsp;</td> -->
+	  <!--     <td>&nbsp;</td> -->
+	  <!--     <td>&nbsp;</td>	       -->
+	  <!--   </tr> -->
+	  <!--   <tr> -->
+	  <!--     <td>&nbsp;</td> -->
+	  <!--     <td>&nbsp;</td> -->
+	  <!--     <td>&nbsp;</td> -->
+	  <!--     <td>&nbsp;</td> -->
+	  <!--     <td>&nbsp;</td> -->
+	  <!--     <td>&nbsp;</td> -->
+	  <!--     <td>&nbsp;</td>	       -->
+	  <!--   </tr> -->
+	  <!-- </table> -->
+
 	</div>
-      </div>
-      <div class="statblock" id="int">
-	<div>Int</div>
-	<div class="stat-props">
-	  <div>Max. Languages</div>
-	  <div>Max. Spell Level</div>
-	  <div>% Chance to Learn Spell</div>
-	  <div>Max. Spells/Level</div>
-	  <div>Spell Immunities</div>
-	</div>
-      </div>
-      <div class="statblock" id="wis">
-	<div>Wis</div>
-	<div class="stat-props">
-	  <div>Magical Defensive Adj.</div>
-	  <div>Bonus Spells</div>
-	  <div>% Chance of Spell Failure</div>
-	  <div>Spell Immunities</div>
-	</div>
-      </div>
-      <div class="statblock" id="cha">
-	<div>Cha</div>
-	<div class="stat-props">
-	  <div>Max. Henchmen</div>
-	  <div>Loyalty Base</div>
-	  <div>Reaction Adj.</div>
-	</div>
-      </div>
-      <div id="hp">HP</div>
-      <div id="ac">AC</div>
-      <div id="thac0">THAC0</div>
-      <div id="saves">
-	<div>Paralyzation, Poison, Death Magic</div>
-	<div>Rod, Staff, Wand</div>
-	<div>Petrification, Polymorph</div>
-	<div>Breath Weapon</div>
-	<div>Spell</div>
       </div>
     </section>
     <!-- <section> -->
