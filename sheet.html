@@ -6,91 +6,92 @@
   <body>
     <section class="main-stats">
       <div id="name" class="group">Name</div>
-      <div class="group" name="info">
+      <div class="group close-top-fillable" id="info">
 	<div class="flex-row">
 	  <div>Race</div><div class="blank"></div>
 	  <div>Class</div><div class="blank"></div>
 	</div>
 	<div class="flex-row">
-	  <div>Alignment</div><div class="blank"></div>
+	  <div>Alignment</div><div class="blank small"></div>
 	  <div>Level</div><div class="blank"></div>
-	  <div>XP</div><div class="blank"></div>
+	  <div>XP</div><div class="blank"></div><div>/</div><div class="blank"></div>
 	</div>
       </div>
       <div class="main-content">
 	<div class="col">
-	  <div class="statblock group" id="str">
+	  <h1 class="group-header">&mdash; Ability Scores &mdash;</h1>
+	  <div class="statblock group close-top-fillable" id="str">
 	    <div>Str</div>
 	    <div class="stat-props">
-	      <div>Hit Adj.</div>
-	      <div>Dmg. Adj.</div>
-	      <div>Weight Allow</div>
-	      <div>Open Doors</div>
-	      <div>Bend Bars/Lift Gates</div>
+	      <div class="fillable-before">Hit Adj.</div>
+	      <div class="fillable-before">Dmg. Adj.</div>
+	      <div class="fillable-before">Weight Allow</div>
+	      <div class="fillable-before">Open Doors</div>
+	      <div class="fillable-before">Bend Bars/Lift Gates</div>
 	    </div>
 	  </div>
-	  <div class="statblock group" id="dex">
+	  <div class="statblock group close-top-fillable" id="dex">
 	    <div>Dex</div>
 	    <div class="stat-props">
-	      <div>Reaction Adj.</div>
-	      <div>Missile Atk. Adj.</div>
-	      <div>Defensive Adj.</div>
+	      <div class="fillable-before">Reaction Adj.</div>
+	      <div class="fillable-before">Missile Atk. Adj.</div>
+	      <div class="fillable-before">Defensive Adj.</div>
 	    </div>
 	  </div>
-	  <div class="statblock group" id="con">
+	  <div class="statblock group close-top-fillable" id="con">
 	    <div>Con</div>
 	    <div class="stat-props">
-	      <div>HP Adj.</div>
-	      <div>Poison Save Adj.</div>
-	      <div>Regeneration</div>
+	      <div class="fillable-before">HP Adj.</div>
+	      <div class="fillable-before">Poison Save Adj.</div>
+	      <div class="fillable-before">Regeneration</div>
 	    </div>
 	  </div>
-	  <div class="statblock group" id="int">
+	  <div class="statblock group close-top-fillable" id="int">
 	    <div>Int</div>
 	    <div class="stat-props">
-	      <div>Max. Languages</div>
-	      <div>Max. Spell Level</div>
-	      <div>% Chance to Learn Spell</div>
-	      <div>Max. Spells/Level</div>
-	      <div>Spell Immunities</div>
+	      <div class="fillable-before">Max. Languages</div>
+	      <!-- <div class="fillable-before">Max. Spell Level</div> -->
+	      <div class="fillable-before">% Chance to Learn Spell</div>
+	      <!-- <div class="fillable-before">Max. Spells/Level</div> -->
+	      <div class="fillable-before">Spell Immunities</div>
 	    </div>
 	  </div>
-	  <div class="statblock group" id="wis">
+	  <div class="statblock group close-top-fillable" id="wis">
 	    <div>Wis</div>
 	    <div class="stat-props">
-	      <div>Magical Defensive Adj.</div>
-	      <div>Bonus Spells</div>
-	      <div>% Chance of Spell Failure</div>
-	      <div>Spell Immunities</div>
+	      <div class="fillable-before">Magical Defensive Adj.</div>
+	      <!-- <div>Bonus Spells</div> -->
+	      <div class="fillable-before">% Chance of Spell Failure</div>
+	      <div class="fillable-before">Spell Immunities</div>
 	    </div>
 	  </div>
-	  <div class="statblock group" id="cha">
+	  <div class="statblock group close-top-fillable" id="cha">
 	    <div>Cha</div>
 	    <div class="stat-props">
-	      <div>Max. Henchmen</div>
-	      <div>Loyalty Base</div>
-	      <div>Reaction Adj.</div>
+	      <div class="fillable-before">Max. Henchmen</div>
+	      <div class="fillable-before">Loyalty Base</div>
+	      <div class="fillable-before">Reaction Adj.</div>
 	    </div>
 	  </div>
 	</div>
 	<div class="col">
-	  <div class="group-header">&mdash; Saves &mdash;</div>
-	  <div id="saves" class="group">
-	    <div>Paralyzation, Poison, Death Magic</div>
-	    <div>Rod, Staff, Wand</div>
-	    <div>Petrification, Polymorph</div>
-	    <div>Breath Weapon</div>
-	    <div>Spell</div>
+	  <h1 class="group-header">&mdash; Saves &mdash;</h1>
+	  <div id="saves" class="group close-top-fillable">
+	    <div class="fillable-before">Paralyzation, Poison, Death Magic</div>
+	    <div class="fillable-before">Rod, Staff, Wand</div>
+	    <div class="fillable-before">Petrification, Polymorph</div>
+	    <div class="fillable-before">Breath Weapon</div>
+	    <div class="fillable-before">Spell</div>
 	  </div>
-	  <div class="group-header">&mdash; Hit Points &mdash;</div>
+	  <h1 class="group-header">&mdash; Hit Points &mdash;</h1>
 	  <div id="hp" class="group"></div>
-	  <div class="group-header">&mdash; Armor Class + THAC0 &mdash;</div>
+	  <h1 class="group-header">&mdash; Armor Class + THAC0 &mdash;</h1>
 	  <div class="acthac0">
 	    <div class="group"></div>
 	    <div class="group"></div>
 	  </div>
-	  <div class="group-header">&mdash; Attacks &mdash;</div>
-	  <div class="weapon-block group">
+	  <h1 class="group-header">&mdash; Attacks &mdash;</h1>
+	  <div class="weapon-block group close-top-fillable">
 	    <div class="flex-row weapon-row">
 	      <div class="weapon">Weapon</div><div class="blank"></div>
 	      <div>Type</div><div class="blank small"></div>
@@ -106,7 +107,7 @@
 	      <div class="range">Range</div><div class="blank"></div>
 	    </div>
 	  </div>
-	  <div class="weapon-block group">
+	  <div class="weapon-block group close-top-fillable">
 	    <div class="flex-row weapon-row">
 	      <div class="weapon">Weapon</div><div class="blank"></div>
 	      <div>Type</div><div class="blank small"></div>
@@ -121,7 +122,7 @@
 	      <div class="range">Range</div><div class="blank"></div>
 	    </div>
 	  </div>
-	  <div class="weapon-block group">
+	  <div class="weapon-block group close-top-fillable">
 	    <div class="flex-row weapon-row">
 	      <div class="weapon">Weapon</div><div class="blank"></div>
 	      <div>Type</div><div class="blank small"></div>
@@ -177,6 +178,153 @@
 	  <!--   </tr> -->
 	  <!-- </table> -->
 
+	</div>
+      </div>
+    </section>
+    <section id="skills">
+      <h1 class="group-header span-2">&mdash; Thief Skills &mdash;</h1>
+      <div class="group span-2">
+	<table class="thief-skills">
+	  <colgroup>
+	    <col class="skill-name">
+	    <col class="fixed-ability">
+	    <col>
+	    <col>
+	    <col>
+	    <col>
+	    <col class="fixed-ability">
+	    <col class="fixed-ability">
+	    <col class="fixed-ability">
+	  </colgroup>
+	  <thead>
+	    <tr>
+	      <th></th>
+	      <th>Base Ability</th>
+	      <th>&plusmn; Dex. Adj.</th>
+	      <th>&plusmn; Race. Adj.</th>
+	      <th>Level Points</th>
+	      <th>Total</th>
+	      <th>No Armor</th>
+	      <th>Elven Chain</th>
+	      <th>Studded or Padded Leather</th>
+	    </tr>
+	  </thead>
+	  <tr>
+	    <td>Pick Pockets</td>
+	    <td>15%</td>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	    <td>+5%</td>
+	    <td>-20%</td>
+	    <td>-30%</td>
+	  </tr>
+	  <tr>
+	    <td>Open Locks</td>
+	    <td>10%</td>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	    <td>-5%</td>
+	    <td>-10%</td>
+	  </tr>
+	  <tr>
+	    <td>Find/Remove Traps</td>
+	    <td>5%</td>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	    <td>-5%</td>
+	    <td>-10%</td>
+	  </tr>
+	  <tr>
+	    <td>Move Silently</td>
+	    <td>10%</td>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	    <td>+10%</td>
+	    <td>-10%</td>
+	    <td>-20%</td>
+	  </tr>
+	  <tr>
+	    <td>Hide in Shadows</td>
+	    <td>5%</td>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	    <td>+5%</td>
+	    <td>-10%</td>
+	    <td>-20%</td>
+	  </tr>
+	  <tr>
+	    <td>Detect Noise</td>
+	    <td>15%</td>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	    <td>-5%</td>
+	    <td>-10%</td>
+	  </tr>
+	  <tr>
+	    <td>Climb Walls</td>
+	    <td>60%</td>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	    <td>+10%</td>
+	    <td>-20%</td>
+	    <td>-30%</td>
+	  </tr>
+	  <tr>
+	    <td>Read Languages</td>
+	    <td>0%</td>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td colspan="9">Backstab Damage Multiple:</td>
+	  </tr>
+	</table>
+      </div>
+      <div class="main-content">
+	<div class="col skills-col">
+	  <h1 class="group-header">&mdash; Proficiencies &amp; Abilities &mdash;</h1>
+	  <div id="proficiencies" class="group free-form">
+
+	  </div>
+	</div>
+	<div class="col skills-col">
+	  <h1 class="group-header">&mdash; Equipment &mdash;</h1>
+	  <div id="equipment" class="group free-form">
+
+	  </div>
+	  <h1 class="group-header">&mdash; Money &mdash;</h1>
+	  <div id="money">
+    	    <div class="group coins">CP</div>
+    	    <div class="group coins">SP</div>
+    	    <div class="group coins">EP</div>
+    	    <div class="group coins">GP</div>
+    	    <div class="group coins">PP</div>
+    	  </div>
+
+	    
+	  </div>
 	</div>
       </div>
     </section>
