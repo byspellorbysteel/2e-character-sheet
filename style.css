@@ -6,7 +6,7 @@
 body {
     font-family: 'Gaegu', sans-serif;
     color: #444;
-    display:flex;
+    /* display:flex; */
 }
 
 @media print {
@@ -16,10 +16,18 @@ body {
 }
 
 section {
-    height: 144mm;
-    width: 101mm;
-    padding: 2mm;
+    height: 143mm;
+    width: 105mm;
+    padding: 0mm;
     border: 1px dotted rgba(128, 128, 128, 0.5);
+}
+
+@media print {
+    section {
+	height: 143mm;
+	width: 105mm;
+	border: none;
+    }
 }
 
 .main-content {
