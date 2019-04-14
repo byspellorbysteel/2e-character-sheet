@@ -147,11 +147,44 @@ h1,
     margin: 0 1mm;
 }
 
+.fillable-after:after {
+    display: inline-block;
+    content: " ";
+    border-bottom: 1px solid currentcolor;
+    width: 5mm;
+    margin: 0 1mm;
+}
+
+
 #saves {
     grid-area: saves;
     letter-spacing: -0.6mm;
 }
 
+#ac {
+    display: flex;
+    font-size: 0.75em;
+    margin:1mm;
+}
+
+#ac > div {
+    flex: 1;
+    margin: 0.5mm;
+}
+
+#armor-worn {
+    line-height: 0.5em;
+    text-align: center;
+}
+
+#ac .ac-total {
+    text-align: center;
+}
+
+#ac .armor-vs-weapon {
+    margin: 0.5mm 1mm;
+    text-align:right;
+}
 
 .header {
     grid-column-start: span 2;
